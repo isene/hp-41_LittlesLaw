@@ -1,5 +1,5 @@
 # hp-41_LittlesLaw
-Using Little's Law to calculate resolution (throughput) time in a queue - e.g. resolution time for IT Service Desk tickets.
+Using [Little's Law](https://corporatefinanceinstitute.com/resources/data-science/littles-law/) to calculate resolution (throughput) time in a queue - e.g. resolution time for IT Service Desk tickets.
 
 Use this convenient program to quickly get your average resolution times.
 
