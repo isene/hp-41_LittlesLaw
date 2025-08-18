@@ -1,4 +1,10 @@
 # hp-41_LittlesLaw
+
+[![HP-41](https://img.shields.io/badge/HP--41-Calculator-orange)](https://en.wikipedia.org/wiki/HP-41C)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/hp-41_LittlesLaw.svg)](https://github.com/isene/hp-41_LittlesLaw/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
 Calculate the variables of [Little's Law](https://corporatefinanceinstitute.com/resources/data-science/littles-law/) such as resolution time for IT Service Desk tickets.
 
 There are two programs supplied, `LL`and `LL2`. While `LL` is specifically for calculating resolution times, `LL2` is used for calculating any of the variables `W`(Waiting time, i.e. Resolution time), `T` (Total items in the queue, i.e. number of open tickets) and `I` (Input, i.e. number of items entering the queue in the period of choice).
