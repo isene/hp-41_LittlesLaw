@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="150" height="150" fill="#1a1f2e"/>
+  
+  <!-- HP-41 Calculator -->
+  <g transform="translate(75, 75)">
+    <!-- Calculator body -->
+    <rect x="-35" y="-40" width="70" height="80" rx="5" fill="#2c2c2c" stroke="#444" stroke-width="2"/>
+    
+    <!-- LCD Display -->
+    <rect x="-30" y="-35" width="60" height="15" rx="2" fill="#0a4d0a" stroke="#333" stroke-width="1"/>
+    <text x="0" y="-25" font-family="monospace" font-size="7" fill="#00ff00" text-anchor="middle">Little's Law</text>
+    
+    <!-- Formula display -->
+    <rect x="-28" y="-17" width="56" height="20" fill="#1a1a1a" stroke="#333" stroke-width="1" rx="1"/>
+    <text x="0" y="-7" font-family="monospace" font-size="8" fill="#60a5fa" text-anchor="middle" font-weight="bold">L = λW</text>
+    <text x="0" y="0" font-family="monospace" font-size="4" fill="#94a3b8" text-anchor="middle">Queue Length = Rate × Wait</text>
+    
+    <!-- Variable inputs -->
+    <g font-family="monospace" font-size="5" fill="#00ff00">
+      <text x="-25" y="8">L: </text>
+      <text x="-10" y="8" fill="#fbbf24">15.5</text>
+      <text x="-25" y="15">λ: </text>
+      <text x="-10" y="15" fill="#fbbf24">3.1</text>
+      <text x="-25" y="22">W: </text>
+      <text x="-10" y="22" fill="#fbbf24">5.0</text>
+    </g>
+    
+    <!-- Keyboard -->
+    <g fill="#1a1a1a" stroke="#666" stroke-width="0.5">
+      <rect x="-25" y="27" width="10" height="6" rx="0.5"/>
+      <rect x="-12" y="27" width="10" height="6" rx="0.5"/>
+      <rect x="1" y="27" width="10" height="6" rx="0.5"/>
+      <rect x="14" y="27" width="10" height="6" rx="0.5"/>
+    </g>
+  </g>
+  
+  <!-- Queue visualization -->
+  <g transform="translate(30, 30)" opacity="0.8">
+    <text x="0" y="-5" font-family="monospace" font-size="5" fill="#60a5fa">Queue:</text>
+    <!-- Queue items -->
+    <rect x="0" y="0" width="8" height="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1" rx="1">
+      <animate attributeName="x" values="0;10;20;30;40" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="10" y="0" width="8" height="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1" rx="1">
+      <animate attributeName="x" values="10;20;30;40;50" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="20" y="0" width="8" height="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1" rx="1">
+      <animate attributeName="x" values="20;30;40;50;60" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="30" y="0" width="8" height="8" fill="#3b82f6" stroke="#2563eb" stroke-width="1" rx="1">
+      <animate attributeName="x" values="30;40;50;60;70" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Flow rate indicator -->
+  <g transform="translate(120, 30)" opacity="0.8">
+    <text x="0" y="-5" font-family="monospace" font-size="5" fill="#10b981">Rate (λ):</text>
+    <g stroke="#10b981" stroke-width="1" fill="none">
+      <path d="M 0,0 L 5,0 L 3,-2 M 5,0 L 3,2">
+        <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 8,0 L 13,0 L 11,-2 M 13,0 L 11,2">
+        <animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 16,0 L 21,0 L 19,-2 M 21,0 L 19,2">
+        <animate attributeName="opacity" values="0;1;0" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- Wait time visualization -->
+  <g transform="translate(30, 120)" opacity="0.8">
+    <text x="0" y="0" font-family="monospace" font-size="5" fill="#fbbf24">Wait Time (W):</text>
+    <rect x="0" y="3" width="50" height="3" fill="#374151" stroke="#4b5563" stroke-width="0.5" rx="0.5"/>
+    <rect x="0" y="3" width="25" height="3" fill="#fbbf24" rx="0.5">
+      <animate attributeName="width" values="0;50;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Server/service point -->
+  <g transform="translate(120, 75)" opacity="0.7">
+    <rect x="-10" y="-10" width="20" height="20" fill="#22c55e" stroke="#16a34a" stroke-width="1" rx="2">
+      <animate attributeName="fill" values="#22c55e;#4ade80;#22c55e" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="0" y="3" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">μ</text>
+    <text x="0" y="18" font-family="monospace" font-size="4" fill="#22c55e" text-anchor="middle">Server</text>
+  </g>
+  
+  <!-- Text -->
+  <text x="75" y="135" font-family="monospace" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Little's Law</text>
+  <text x="75" y="145" font-family="monospace" font-size="7" fill="#94a3b8" text-anchor="middle">Queueing Theory Calculator</text>
+</svg>
