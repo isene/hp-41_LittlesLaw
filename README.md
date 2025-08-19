@@ -6,6 +6,7 @@
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
 
 <img src="img/littleslaw_logo.svg" align="left" width="150" height="150" alt="Little's Law Logo">
+<br clear="left"/>
 
 Calculate the variables of [Little's Law](https://corporatefinanceinstitute.com/resources/data-science/littles-law/) such as resolution time for IT Service Desk tickets.
 
